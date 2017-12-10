@@ -1,0 +1,56 @@
+.collection-wrapper {
+    margin-top: 20px;
+
+    .big-thumbnail {
+        overflow: hidden;
+        z-index: 10;
+        height: 100%;
+
+        img {
+            object-fit: cover;
+            height: 520px;
+            width: 100%;
+        }
+    }
+    .small-thumbnail {
+        overflow: hidden;
+        z-index: 10;
+        height: 100%;
+
+        img {
+            object-fit: cover;
+            height: 250px;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+
+    .collection-wrapper {
+        margin-top: 0;
+        .big-thumbnail {
+            margin-left: -10px;
+            margin-right: -10px;
+            img {
+                height: 255px;
+
+            }
+        }
+        .small-thumbnail {
+            img {
+                height: 130px;
+            }
+        }
+    }
+
+    .col-xs-6:first-child {
+        padding-right: 0.15rem;
+        padding-left: 0rem;
+    }
+
+    .col-xs-6:last-child {
+        padding-right: 0rem;
+        padding-left: 0.15rem;
+    }
+}
