@@ -166,6 +166,11 @@ select {
     outline: none;
 }
 
+.hidden {
+  display: none;
+  visibility: hidden;
+} 
+
 @media only screen and (max-device-width: 480px) {
     body, footer {
       padding: 0 10px;  
