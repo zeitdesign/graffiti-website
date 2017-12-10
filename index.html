@@ -103,8 +103,7 @@
                     <div class="box">
                         <h2>Street edition Kalender 2018</h2>
                         <p class="price">CHF 30.00</p>
-                        <form name="order" data-netlify="true" netlify-honeypot="bot-field" action="https://www.paypal.me/GraffitiBern/30">
-                            <input class="hidden" name="bot-field">
+                        <form action="https://formspree.io/graffiti_bern@protonmail.com" method="POST">
                             <select name="anrede" required>
                             <option value="" selected disabled hidden>Anrede</option>    
                             <option value="frau">Frau</option>
@@ -112,10 +111,14 @@
                           </select><br>
                             <input type="text" name="vorname" placeholder="Vorname" required><br>
                             <input type="text" name="nachname" placeholder="Nachname" required><br>
-                            <input type="email" name="email" placeholder="E-Mail-Adresse" required><br>
+                            <input type="email" name="_replyto" placeholder="E-Mail-Adresse" required><br>
                             <input type="txt" name="strasse" placeholder="Strasse" required><br>
                             <input type="number" name="plz" placeholder="PLZ" required><br>
                             <input type="text" name="ort" placeholder="Ort" required><br>
+                            <input type="hidden" name="_next" value="https://www.paypal.me/GraffitiBern/30" />
+                            <input type="hidden" name="_subject" value="Neue Bestellung - Street edition Kalender 2018" />
+                            <input type="hidden" name="_language" value="de" />
+                            <input type="text" name="_gotcha" style="display:none" />
                             <button type="submit">Bestellen</button><br>
                         </form>
                         <p class="infotext">Falls du kein PayPal Account besitzt, bitte <a href="mailto:graffiti_bern@protonmail.com">hier</a> melden.</p>
