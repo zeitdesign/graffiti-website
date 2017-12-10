@@ -171,6 +171,11 @@ select {
   visibility: hidden;
 } 
 
+.infotext {
+    font-size: 14px;
+    padding-top: 10px;
+}
+
 @media only screen and (max-device-width: 480px) {
     body, footer {
       padding: 0 10px;  
